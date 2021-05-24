@@ -296,6 +296,9 @@ main .contatos .wpp__contatos {
 }
 
 main .contatos .wpp__contatos a {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
   padding: 1em;
   text-decoration: none;
   border: 1px solid #0C4125;
