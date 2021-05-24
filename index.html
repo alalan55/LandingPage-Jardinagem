@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilos/index.css">
+    <title>Jardinagem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="capa">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <span>Logo.co</span>
+                    </div>
+                    <ul class="links">
+                        <div class="close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <li><a href="#sbr"  onclick="fecharLinks()">Sobre</a></li>
+                        <li><a href="#prjt" onclick="fecharLinks()">Projetos</a></li>
+                        <li><a href="#ctts"  onclick="fecharLinks()">Contato</a></li>
+                    </ul>
+                    
+                    <div class="media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+
+                    <div class="mobile">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="titulo__capa">
+                <h1>Gardening <br> as a passion</h1>
+            </div>
+
+        </div>
+
+        <main>
+            <section class="sobre" id="sbr">
+               <div class="img__sobre">
+                   <img src="https://images.pexels.com/photos/1055408/pexels-photo-1055408.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+               </div>
+               <div class="descricao__sobre">
+                   <div class="titulo__sobre">
+                       <h2>Quem somos nós?</h2>
+                   </div>
+                   <div class="descricao__sobre">
+                       <p>Orci nulla pellentesque dignissim enim. Ac placerat vestibulum lectus mauris ultrices eros in. Nascetur ridiculus mus mauris vitae. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Diam vulputate ut pharetra sit amet. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Purus ut faucibus pulvinar elementum. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Congue quisque.</p>
+                   </div>
+               </div>
+            </section>
+
+            <section class="projetos" id="prjt">
+               <div class="titulo__projetos">
+                   <h2>Alguns de nossos Projetos</h2>
+               </div>
+
+               <div class="cards__projetos">
+                   <div class="card__projeto">
+                       <div class="img__card">
+                           <img src="https://images.pexels.com/photos/3040712/pexels-photo-3040712.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                       </div>
+                       <div class="nome__projeto">
+                           <span>Projeto I</span>
+                       </div>
+                   </div>
+
+                   <div class="card__projeto">
+                    <div class="img__card">
+                        <img src="https://images.pexels.com/photos/1702495/pexels-photo-1702495.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                    </div>
+                    <div class="nome__projeto">
+                        <span>Projeto II</span>
+                    </div>
+                </div>
+
+                <div class="card__projeto">
+                    <div class="img__card">
+                        <img src="https://images.pexels.com/photos/2560900/pexels-photo-2560900.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                    </div>
+                    <div class="nome__projeto">
+                        <span>Projeto III</span>
+                    </div>
+                </div>
+               </div>
+            </section>
+
+            <section class="contatos" id="ctts">
+                <div class="descricao__contato">
+                    <h2>Fale conosco</h2>
+                </div>
+
+                <div class="formulario">
+                    <div class="descricao__form">
+                        <span>Entre em contato abaixo, e vamos conversar sobre sua ideia!</span>
+                    </div>
+
+                    <form action="">
+                        <input type="text" placeholder="Digite seu nome completo">
+                        <input type="email" placeholder="Digite o seu email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Conte-me sua ideia!"></textarea>
+
+                        <input type="submit" placeholder="Enviar" class="btn--enviar">
+                    </form>
+                </div>
+
+                <div class="wpp__contatos">
+                    <a href="">Ou se preferir, fale conosco direto <i class="fab fa-whatsapp"></i></a>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+           <div class="conteudo__footer">
+               <span>Nome da sua empresa  &copy; Todos os direitos reservados</span>
+           </div>
+           <div class="name">
+               <span>Desenvolvido com <i class="far fa-heart"></i> por <a href="">Alan</a></span>
+           </div>
+        </footer>
+
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

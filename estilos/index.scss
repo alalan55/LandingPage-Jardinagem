@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+//capa
+.capa{
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/3761142/pexels-photo-3761142.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    header{
+        width: 100%;
+        height: 60px;
+       
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 .3em;
+
+            .logo{
+                span{
+                    font-size: 1em;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+            
+            .links{
+                .close{
+                    color: white;
+                    display: none;
+                    cursor: pointer;
+                    margin-top: 1em;
+                }
+                li{
+                    display: inline-block;
+                    margin: 0 .6em;
+                    transition: .2s ease-in-out;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    &:hover{
+                        a{
+                            border-bottom: 1px solid white;
+                        }
+                    }
+                }
+            }
+            .media{
+                color: white;
+                a{
+                    margin: 0 .6em;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.4rem;
+                }
+                .fa-instagram{
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        color: #e26977;
+                    }
+                }
+                .fa-facebook{
+                    transition: .2s ease-in-out;
+                    &:hover{
+
+                        color: #4C6EF5;
+                    }
+                }
+            }
+            .mobile{
+                display: none;
+                color: white;
+
+                i{
+                    font-size: 1.5em;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .titulo__capa{
+        height: calc(100vh - 60px);
+        display: flex;
+        align-items: center;
+        padding: 5em;
+
+        h1{
+            font-size: 6rem;
+            color: white;
+            font-weight: 100;
+        }
+    }
+}
+
+main{
+    .sobre{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4em;
+
+        .img__sobre{
+            width: 100%;
+            height: 100%;
+
+            img{
+                max-width: 100%;
+            }
+        }
+        .descricao__sobre{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .titulo__sobre{
+                h2{
+                    font-weight: 100;
+                    font-size: 4rem;
+                    transition: .3s;
+                }
+            }
+            .descricao__sobre{
+                text-align: justify;
+            }
+        }
+
+        &>div{
+            flex: 1 1 300px;
+            margin: 0 .7em;
+        }
+    }
+    .projetos{
+        padding: 4em;
+        background: #FEEE96;
+
+        .titulo__projetos{
+            text-align: right;
+            margin-bottom: 2em;
+            h2{
+                font-weight: 100;
+                font-size: 4rem;
+                transition: .3s;
+            }
+        }
+
+        .cards__projetos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card__projeto{
+           
+                margin: .5em;
+
+                .img__card{
+                    width: 300px;
+                    height: 500px;
+                    overflow: hidden;
+
+                    img{
+                        max-width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .nome__projeto{
+                    text-align: center;
+                    padding: .5em;
+                   border: 1px solid #181B11;
+                    height: 100%;
+                    margin-top: 0;
+                    color: #181B11;
+                    transition: .2s ease-in-out;
+
+                    &:hover{
+                        background: rgba(#181B11, 0.9);
+                    color: #FEEE96;
+                    }
+                }
+            }
+        }
+    }
+    .contatos{
+        padding: 4em;
+
+        .descricao__contato{
+            margin-bottom: 2em;
+            h2{
+                font-weight: 100;
+                font-size: 4rem;
+                transition: .3s;
+            }
+        }
+        .formulario{
+
+            form{
+                display: flex;
+                flex-direction: column;
+
+                input{
+                    margin: 1em 0;
+                    padding: 2% 0 2% 1%;
+                    margin: 15px 0; 
+                }
+                .btn--enviar{
+                    cursor: pointer;
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                    background: none;
+                    border: 1px solid #272517;
+                    transition: .2s ease-in-out;
+
+                    &:hover{
+                        background: #272517;
+                        color: white;
+
+                    }
+                }
+                textarea{
+                    max-width: 100%;
+                    margin: 15px 0;
+                    padding: 1%;
+                }
+            }
+        }
+        .wpp__contatos{
+            text-align: center;
+            margin-top: 2em;
+           
+            a{
+               // display: block;
+                padding: 1em; 
+                text-decoration: none;
+                border: 1px solid #0C4125;
+                color: #0C4125;
+                transition: .2s ease-in-out;
+
+                &:hover{
+                    background: #0C4125;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+footer{
+   
+    background: #272517;
+    padding: 4em 4em 1em 4em;
+    .conteudo__footer{
+        color: white;
+        text-align: center;
+
+    }
+    .name{
+        margin-top: 2em;
+        text-align: center;
+        width: 100%;
+        color: white;
+        padding-bottom: .2em;
+        span{
+            font-size: .8em;
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+            }
+            .fa-heart{
+                color: rgb(211, 62, 62);
+            }
+        }
+    }
+}
+
+@media screen and(max-width:580px){
+    nav{
+        padding: 0 .5em !important;
+        .mobile{
+            display: block !important;
+        }
+        .media{
+            display: none;
+        }
+        .links{
+           // display: none;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgba(#181B11, 0.9);
+            top: 0;
+            left: -100%;
+            text-align: center;
+            transition:  all .5s;
+            .close{
+                display: block !important;
+            }
+           
+            
+            li{
+                display: block !important;
+                margin: 50px 0 !important;
+                line-height: 30px;
+            }
+        }
+    }
+    .titulo__projetos{
+        text-align: center !important;
+        h2{
+            font-size: 2rem !important;
+        }
+    }
+    .descricao__contato{
+        text-align: center;
+        h2{
+            font-size: 2rem !important;
+        }
+    }
+}
+
+@media screen and (max-width:720px){
+    .titulo__capa{
+        h1{
+            font-size: 3rem !important;
+        }
+    }
+}
+
+@media screen and (max-width:517px) {
+    .titulo__sobre{
+        text-align: center;
+        h2{
+            font-size: 2rem !important;
+        }
+    }
+    
+}
