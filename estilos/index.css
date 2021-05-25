@@ -400,5 +400,9 @@ footer .name span .fa-heart {
   .titulo__sobre h2 {
     font-size: 2rem !important;
   }
+  .wpp__contatos a {
+    font-size: .8rem !important;
+    width: 80% !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */
