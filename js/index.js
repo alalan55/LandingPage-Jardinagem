@@ -59,10 +59,11 @@ const removeClasseCapa = () =>{
         titleCapa.classList.remove('animate__fadeInLeft');
     }, 1300)
 }
-removeClasseCapa();
 
-console.log(titleCapa)
-
+const scrollTop = () => {
+    window.scrollTo(0, 0)
+ }
+ removeClasseCapa();
 btnNav.addEventListener('click', abrirNav)
 btnClose.addEventListener('click', fecharNav);
 
