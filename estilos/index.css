@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.animate {
+  opacity: 0;
+}
+
 .capa {
   height: 100vh;
   background: url(https://images.pexels.com/photos/3761142/pexels-photo-3761142.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;
@@ -234,7 +238,7 @@ main .projetos .cards__projetos .card__projeto .nome__projeto {
 }
 
 main .projetos .cards__projetos .card__projeto .nome__projeto:hover {
-  background: rgba(24, 27, 17, 0.9);
+  background: rgba(24, 27, 17, 0.92);
   color: #FEEE96;
 }
 
@@ -346,7 +350,7 @@ footer .name span .fa-heart {
 
 @media screen and (max-width: 580px) {
   nav {
-    padding: 0 .5em !important;
+    padding: 0 1em !important;
   }
   nav .mobile {
     display: block !important;

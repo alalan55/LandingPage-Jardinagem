@@ -8,6 +8,10 @@ html{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+//animacao
+.animate{
+    opacity: 0;
+}
 
 
 //capa
@@ -192,7 +196,7 @@ main{
                     transition: .2s ease-in-out;
 
                     &:hover{
-                        background: rgba(#181B11, 0.9);
+                        background: rgba(#181B11, 0.92);
                     color: #FEEE96;
                     }
                 }
@@ -297,7 +301,7 @@ footer{
 
 @media screen and(max-width:580px){
     nav{
-        padding: 0 .5em !important;
+        padding: 0 1em !important;
         .mobile{
             display: block !important;
         }
