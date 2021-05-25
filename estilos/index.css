@@ -394,13 +394,20 @@ footer .name span .fa-heart {
 }
 
 @media screen and (max-width: 517px) {
-  .titulo__sobre {
-    text-align: center;
+  .sobre {
+    padding: 2em !important;
   }
-  .titulo__sobre h2 {
+  .sobre .titulo__sobre {
+    text-align: center;
+    padding: 1em 0;
+  }
+  .sobre .titulo__sobre h2 {
     font-size: 2rem !important;
   }
-  .wpp__contatos a {
+  .contatos {
+    padding: 2em  !important;
+  }
+  .contatos .wpp__contatos a {
     font-size: .8rem !important;
     width: 80% !important;
   }

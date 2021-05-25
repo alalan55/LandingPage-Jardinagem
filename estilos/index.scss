@@ -349,16 +349,23 @@ footer{
 }
 
 @media screen and (max-width:517px) {
-    .titulo__sobre{
-        text-align: center;
-        h2{
-            font-size: 2rem !important;
+    .sobre{
+        padding: 2em !important;
+        .titulo__sobre{
+            text-align: center;
+            padding: 1em 0;
+            h2{
+                font-size: 2rem !important;
+            }
         }
     }
-    .wpp__contatos{
-        a{
-            font-size: .8rem !important;
-            width: 80% !important;
+    .contatos{
+        padding: 2em  !important;
+        .wpp__contatos{
+            a{
+                font-size: .8rem !important;
+                width: 80% !important;
+            }
         }
     }
     
